@@ -1,0 +1,40 @@
+
+.color_button{
+  background-color: orange;
+
+}
+
+.sale{
+
+  background-color: red;
+  color: yellow;
+
+}
+.angular_shop_container{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 80px;
+
+}
+.single_card{
+
+
+  display: flex;
+  flex-direction:column;
+  gap: 3rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+.single_card{
+
+  border: 2px solid red;
+  width: 200px;
+  height: 300px;
+
+}

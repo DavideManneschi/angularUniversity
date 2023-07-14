@@ -1,0 +1,12 @@
+
+
+<div class="mock_description">
+
+  <h1 [ngClass]="'header_style'"></h1>
+</div>
+
+<app-zelle-description (click)="items_on_sale()" (acknowledge)="parent_acknowledgement($event)" [title_item]="products[0]"></app-zelle-description>
+
+<app-zelle-description [title_item]="products[3]"></app-zelle-description>
+
+

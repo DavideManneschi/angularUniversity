@@ -1,0 +1,38 @@
+
+
+<div
+     class=" angular_shop_container">
+  <div
+    *ngIf="title_item.on_sale; else discount"
+    [ngClass]="items_on_sale()"
+
+    class="single_card">
+  <div class="upper_card_image">
+    <img ngSrc="/assets/images/space(7).png" height="100" width="100">
+  </div>
+
+    <button [style.background-color]="'blue'" (click)="items_on_sale()">click</button>
+  <div class="lower_card_description">
+    <p>{{title_item.product_name}}</p>
+    <p>the following item is on sale:{{title_item.on_sale}}</p>
+
+  </div>
+
+  <div class="button_explore">
+
+<!--    to apply multiple styles it is possible to use the ngstyle directive -->
+<!--     when there is an object that defines the styles it is called a configuration object-->
+    <button [ngStyle]="{'background-color':'pink',
+    'font-weight':'bold'}" (click)="explore_item()">explore product!</button>
+
+  </div>
+
+<!--    lets see the difference between ngcontent and container-->
+<!--    ngcontainer it can be used as a wrapper to provide a wrapper for strructural directives
+-->
+    <ng-template class="discount_div_banner" #discount>
+      <p> no discount available on the  items selected</p>
+    </ng-template>
+
+</div>
+</div>
